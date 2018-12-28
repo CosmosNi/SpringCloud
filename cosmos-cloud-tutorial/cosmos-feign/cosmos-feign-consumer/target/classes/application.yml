@@ -1,0 +1,30 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: feign-comsumer
+
+eureka:
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+
+
+feign:
+  httpclient:
+    enabled: true
+  hystrix:
+    enabled: true
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream

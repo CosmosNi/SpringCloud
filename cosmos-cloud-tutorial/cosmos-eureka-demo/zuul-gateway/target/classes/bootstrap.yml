@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: zuul-gateway
+  cloud:
+    config:
+      uri: http://localhost:8988
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

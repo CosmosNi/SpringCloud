@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+        <module name="cosmos-fegin-httpclient" />
+        <module name="cosmos-feign-consumer" />
+        <module name="cosmos-feign-okhttp" />
+        <module name="cosmos-feign-provider" />
+        <module name="cosmos-feign-single" />
+        <module name="cosmos-hystrix-dashboard" />
+        <module name="cosmos-hystrix-single" />
+        <module name="cosmos-turbine" />
+        <module name="eureka-client" />
+        <module name="eureka-server" />
+        <module name="eureka-single" />
+        <module name="zuul-gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cosmos-eureka-demo" target="1.5" />
+      <module name="cosmos-feign-eureka" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-server" options="" />
+      <module name="demo" options="" />
+      <module name="eureka-server" options="" />
+    </option>
+  </component>
+</project>

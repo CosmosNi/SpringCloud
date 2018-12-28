@@ -1,0 +1,9 @@
+Hystrix异常机制和处理
+以下5种出错情况会被fallback所截获:
+1.FAILURE:执行失败，抛出异常
+2.TIMEOUT:执行超时
+3.SHORT_CIRCUITED:断路器打开
+4.THREAD_POOL_REJECTED:线程池拒绝
+5.SEMAPHORE_REJECTED:信号量拒绝
+
+Hystrix配置说明:

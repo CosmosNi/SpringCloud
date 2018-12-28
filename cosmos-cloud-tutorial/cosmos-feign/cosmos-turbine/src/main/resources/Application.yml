@@ -1,0 +1,24 @@
+turbine:
+  appconfig: feign-comsumer,feign-provider
+  clusterNameExpression: "'default'"
+
+
+spring:
+  application:
+    name: feign-turbine
+
+server:
+  port: 9800
+
+eureka:
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+
+
+

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-server
+  cloud:
+    config:
+      uri: http://localhost:8988
+management:
+    security:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: '*'

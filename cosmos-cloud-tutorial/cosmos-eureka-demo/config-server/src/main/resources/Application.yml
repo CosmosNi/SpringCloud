@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    #配置文件以文件的形式读取，在config目录下
+    active: native
+
+server:
+  port: 8988
